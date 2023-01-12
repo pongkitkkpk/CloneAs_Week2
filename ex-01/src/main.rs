@@ -5,10 +5,10 @@ fn main() {
     print!("Input : x = ");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut input).expect("Failed ReadLine");
-    let mom:i32=input.parse().expect("Enter Number");
+    let mom:i32=input.trim().parse().expect("Enter Number");
     
     for i in (0..=mom-1){
-        for _ in 0..=i{
+        for a in 0..=i{
             print!("* ");
         }
         println!();
